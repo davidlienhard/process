@@ -5,12 +5,12 @@ declare(strict_types=1);
 namespace DavidLienhard;
 
 use \PHPUnit\Framework\TestCase;
-use \DavidLienhard\Process;
+use \DavidLienhard\Process\Process;
 
 class ProcessTest extends TestCase
 {
     /**
-     * @covers \DavidLienhard\Process::start()
+     * @covers \DavidLienhard\Process\Process::start()
     */
     public function testCannotStartProcessWithoutCommand(): void
     {
@@ -19,7 +19,7 @@ class ProcessTest extends TestCase
     }
 
     /**
-     * @covers \DavidLienhard\Process::start()
+     * @covers \DavidLienhard\Process\Process::start()
     */
     public function testCanStartProcess(): void
     {
@@ -29,7 +29,7 @@ class ProcessTest extends TestCase
 
 
     /**
-     * @covers \DavidLienhard\Process::check()
+     * @covers \DavidLienhard\Process\Process::check()
     */
     public function testCannotCheckProcessWithoutPid(): void
     {
@@ -38,7 +38,7 @@ class ProcessTest extends TestCase
     }
 
     /**
-     * @covers \DavidLienhard\Process::check()
+     * @covers \DavidLienhard\Process\Process::check()
     */
     public function testCannotCheckProcessWithStringAsPid(): void
     {
@@ -47,7 +47,7 @@ class ProcessTest extends TestCase
     }
 
     /**
-     * @covers \DavidLienhard\Process::check()
+     * @covers \DavidLienhard\Process\Process::check()
     */
     public function testCheckOfNonExistingProcessReturnsFalse(): void
     {
@@ -55,7 +55,7 @@ class ProcessTest extends TestCase
     }
 
     /**
-     * @covers \DavidLienhard\Process::check()
+     * @covers \DavidLienhard\Process\Process::check()
     */
     public function testCanCheckProcess(): void
     {
@@ -67,7 +67,7 @@ class ProcessTest extends TestCase
 
 
     /**
-     * @covers \DavidLienhard\Process::kill()
+     * @covers \DavidLienhard\Process\Process::kill()
     */
     public function testCannotKillProcessWithoutPid(): void
     {
@@ -76,7 +76,7 @@ class ProcessTest extends TestCase
     }
 
     /**
-     * @covers \DavidLienhard\Process::kill()
+     * @covers \DavidLienhard\Process\Process::kill()
     */
     public function testCannotKillProcessWithStringAsPid(): void
     {
@@ -85,7 +85,7 @@ class ProcessTest extends TestCase
     }
 
     /**
-     * @covers \DavidLienhard\Process::kill()
+     * @covers \DavidLienhard\Process\Process::kill()
     */
     public function testCanKillProcess(): void
     {
