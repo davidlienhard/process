@@ -4,8 +4,6 @@
  *
  * @package         tourBase
  * @author          David Lienhard <david.lienhard@tourasia.ch>
- * @version         1.0.1, 17.11.2020
- * @since           1.0.0, 16.11.2020, created
  * @copyright       tourasia
  */
 
@@ -19,8 +17,6 @@ use \DavidLienhard\Process\ProcessInterface;
  * contains methods to start, check and kill system processes
  *
  * @author          David Lienhard <david.lienhard@tourasia.ch>
- * @version         1.0.1, 17.11.2020
- * @since           1.0.0, 16.11.2020, created
  * @copyright       tourasia
  */
 class Process implements ProcessInterface
@@ -29,8 +25,6 @@ class Process implements ProcessInterface
      * starts a process by using exec() and returns the process id
      *
      * @author          David Lienhard <david.lienhard@tourasia.ch>
-     * @version         1.0.0, 16.11.2020
-     * @since           1.0.0, 16.11.2020, created
      * @copyright       tourasia
      * @param           string          $command        the command to start
      * @return          int
@@ -46,8 +40,6 @@ class Process implements ProcessInterface
      * checks if a process is running
      *
      * @author          David Lienhard <david.lienhard@tourasia.ch>
-     * @version         1.0.0, 16.11.2020
-     * @since           1.0.0, 16.11.2020, created
      * @copyright       tourasia
      * @param           int             $pid        the process id to check
      * @return          bool
@@ -62,8 +54,6 @@ class Process implements ProcessInterface
      * kills a process
      *
      * @author          David Lienhard <david.lienhard@tourasia.ch>
-     * @version         1.0.0, 16.11.2020
-     * @since           1.0.0, 16.11.2020, created
      * @copyright       tourasia
      * @param           int             $pid        the process id to kill
      * @return          bool
