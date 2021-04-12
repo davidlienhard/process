@@ -25,7 +25,6 @@ interface ProcessInterface
      * @author          David Lienhard <david.lienhard@tourasia.ch>
      * @copyright       tourasia
      * @param           string          $command        the command to start
-     * @return          int
      */
     public static function start(string $command) : int;
 
@@ -35,7 +34,6 @@ interface ProcessInterface
      * @author          David Lienhard <david.lienhard@tourasia.ch>
      * @copyright       tourasia
      * @param           int             $pid        the process id to check
-     * @return          bool
      */
     public static function check(int $pid) : bool;
 
@@ -45,7 +43,6 @@ interface ProcessInterface
      * @author          David Lienhard <david.lienhard@tourasia.ch>
      * @copyright       tourasia
      * @param           int             $pid        the process id to kill
-     * @return          bool
      */
     public static function kill(int $pid) : bool;
 }
