@@ -58,6 +58,6 @@ class Process implements ProcessInterface
     public static function kill(int $pid) : bool
     {
         exec("kill -9 ".intval($pid), $output, $code);
-        return ($code == 0);
+        return ($code === 0);
     }
 }
