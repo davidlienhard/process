@@ -1,6 +1,6 @@
 {
     "name": "davidlienhard/process",
-    "license": "proprietary",
+    "license": ["MIT"],
     "description": "🐘 php library to create and kill system processes",
     "keywords": [ "process", "php", "library" ],
     "type": "libary",
