@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace DavidLienhard;
 
-use \PHPUnit\Framework\TestCase;
-use \DavidLienhard\Process\Process;
+use DavidLienhard\Process\Process;
+use PHPUnit\Framework\TestCase;
 
 class ProcessTest extends TestCase
 {
