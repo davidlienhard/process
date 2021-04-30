@@ -11,7 +11,7 @@ declare(strict_types=1);
 
 namespace DavidLienhard\Process;
 
-use \DavidLienhard\Process\ProcessInterface;
+use DavidLienhard\Process\ProcessInterface;
 
 /**
  * contains methods to start, check and kill system processes
